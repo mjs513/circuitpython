@@ -8,7 +8,12 @@ teensy_loader_cli --mcu=imxrt1062 -v -w TEENSY40-<date_version_tag>.hex
 or for Teensy 4.1:
 
 ```bash
-teensy_loader_cli --mcu=imxrt1062 -v -w TEENSY41-<date_version_tag>.hex
+teensy_loader_cli --mcu=TEENSY41 -v -w TEENSY41-<date_version_tag>.hex
+```
+or for Sparkfun Teensy MicroMod
+
+```bash
+teensy_loader_cli --mcu=TEENSY_MICROMOD -v -w SPARKFUN_TEENSY_MICROMOD-<date_version_tag>.hex
 ```
 
 When loading the firmware the PJRC boot loader will erase the content of the board file system.
